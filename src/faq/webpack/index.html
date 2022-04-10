@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>webpack优化 | Jenny 的学习笔记</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="stylesheet" href="/css/style.css">
+    <script charset="utf-8" src="/js/main.js"></script>
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/assets/css/0.styles.fdee9969.css" as="style"><link rel="preload" href="/assets/js/app.3a51ea5a.js" as="script"><link rel="preload" href="/assets/js/2.7a6cbd8d.js" as="script"><link rel="preload" href="/assets/js/40.54919f77.js" as="script"><link rel="prefetch" href="/assets/js/10.ae26a9ae.js"><link rel="prefetch" href="/assets/js/11.9984dc0f.js"><link rel="prefetch" href="/assets/js/12.5003a7a3.js"><link rel="prefetch" href="/assets/js/13.8cec5501.js"><link rel="prefetch" href="/assets/js/14.b6dc96bf.js"><link rel="prefetch" href="/assets/js/15.882b2634.js"><link rel="prefetch" href="/assets/js/16.5857d63e.js"><link rel="prefetch" href="/assets/js/17.5a1f4e3a.js"><link rel="prefetch" href="/assets/js/18.7c332761.js"><link rel="prefetch" href="/assets/js/19.a92697b0.js"><link rel="prefetch" href="/assets/js/20.2baf9e65.js"><link rel="prefetch" href="/assets/js/21.8d7ffc0a.js"><link rel="prefetch" href="/assets/js/22.8c266082.js"><link rel="prefetch" href="/assets/js/23.4dcb8684.js"><link rel="prefetch" href="/assets/js/24.7e1b8bd7.js"><link rel="prefetch" href="/assets/js/25.6893b5a6.js"><link rel="prefetch" href="/assets/js/26.cdba9aa9.js"><link rel="prefetch" href="/assets/js/27.4436af58.js"><link rel="prefetch" href="/assets/js/28.134e0d73.js"><link rel="prefetch" href="/assets/js/29.cc751d36.js"><link rel="prefetch" href="/assets/js/3.9025e100.js"><link rel="prefetch" href="/assets/js/30.76f84ac1.js"><link rel="prefetch" href="/assets/js/31.92d4f1ba.js"><link rel="prefetch" href="/assets/js/32.49fd4f20.js"><link rel="prefetch" href="/assets/js/33.966f66b4.js"><link rel="prefetch" href="/assets/js/34.f979adae.js"><link rel="prefetch" href="/assets/js/35.a87d9b31.js"><link rel="prefetch" href="/assets/js/36.e113d7c8.js"><link rel="prefetch" href="/assets/js/37.f4cb478d.js"><link rel="prefetch" href="/assets/js/38.41140f59.js"><link rel="prefetch" href="/assets/js/39.fe0182a6.js"><link rel="prefetch" href="/assets/js/4.d0c4069c.js"><link rel="prefetch" href="/assets/js/41.bfd32d9d.js"><link rel="prefetch" href="/assets/js/42.d000c9cf.js"><link rel="prefetch" href="/assets/js/43.14f893af.js"><link rel="prefetch" href="/assets/js/44.19fe44b9.js"><link rel="prefetch" href="/assets/js/45.e1d0283a.js"><link rel="prefetch" href="/assets/js/46.2b561767.js"><link rel="prefetch" href="/assets/js/47.837d8d78.js"><link rel="prefetch" href="/assets/js/48.5e8286eb.js"><link rel="prefetch" href="/assets/js/49.6e2b25f0.js"><link rel="prefetch" href="/assets/js/5.325850c0.js"><link rel="prefetch" href="/assets/js/50.c03b0bcd.js"><link rel="prefetch" href="/assets/js/51.d397769e.js"><link rel="prefetch" href="/assets/js/52.7d92bb33.js"><link rel="prefetch" href="/assets/js/53.31df2ef1.js"><link rel="prefetch" href="/assets/js/54.6f014636.js"><link rel="prefetch" href="/assets/js/55.7026ba4d.js"><link rel="prefetch" href="/assets/js/56.8610bd61.js"><link rel="prefetch" href="/assets/js/57.4dab35be.js"><link rel="prefetch" href="/assets/js/58.36461e34.js"><link rel="prefetch" href="/assets/js/59.dd40fcbf.js"><link rel="prefetch" href="/assets/js/6.e07a44fa.js"><link rel="prefetch" href="/assets/js/60.af6fca51.js"><link rel="prefetch" href="/assets/js/61.437fcd37.js"><link rel="prefetch" href="/assets/js/62.6c16153a.js"><link rel="prefetch" href="/assets/js/63.e5c7b9b6.js"><link rel="prefetch" href="/assets/js/64.86a63bc0.js"><link rel="prefetch" href="/assets/js/65.2a59dc53.js"><link rel="prefetch" href="/assets/js/66.7bbf2507.js"><link rel="prefetch" href="/assets/js/67.441d4566.js"><link rel="prefetch" href="/assets/js/68.121d6fae.js"><link rel="prefetch" href="/assets/js/69.6223f594.js"><link rel="prefetch" href="/assets/js/7.d6ae9493.js"><link rel="prefetch" href="/assets/js/70.f2fd6f90.js"><link rel="prefetch" href="/assets/js/71.7e167845.js"><link rel="prefetch" href="/assets/js/72.a8004dd5.js"><link rel="prefetch" href="/assets/js/73.c51c3267.js"><link rel="prefetch" href="/assets/js/74.4c6489a8.js"><link rel="prefetch" href="/assets/js/75.53468a29.js"><link rel="prefetch" href="/assets/js/76.2d29594d.js"><link rel="prefetch" href="/assets/js/77.e13fff63.js"><link rel="prefetch" href="/assets/js/78.5ae5d561.js"><link rel="prefetch" href="/assets/js/79.100ae315.js"><link rel="prefetch" href="/assets/js/8.ce44b8a3.js"><link rel="prefetch" href="/assets/js/80.cf1b2332.js"><link rel="prefetch" href="/assets/js/81.a3b1864f.js"><link rel="prefetch" href="/assets/js/82.223714d2.js"><link rel="prefetch" href="/assets/js/9.421c83c8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.fdee9969.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/jenny.png" alt="Jenny 的学习笔记" class="logo"> <span class="site-name can-hide">Jenny 的学习笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/src/faq/js/all/" class="nav-link">
+  日常笔记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础笔记" class="dropdown-title"><span class="title">基础笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础笔记" class="mobile-dropdown-title"><span class="title">基础笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/src/vue/01_introduction/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/src/webpack/index1/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/src/webApi/location/" class="nav-link">
+  webApi
+</a></li><li class="dropdown-item"><!----> <a href="/src/lgthm/index1/" class="nav-link">
+  lgthm
+</a></li><li class="dropdown-item"><!----> <a href="/src/reg/index1/" class="nav-link">
+  reg
+</a></li><li class="dropdown-item"><!----> <a href="/src/js/1_简介/" class="nav-link">
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/src/cmd/cmd1/" class="nav-link">
+  cmd
+</a></li><li class="dropdown-item"><!----> <a href="/src/shell/shell/" class="nav-link">
+  shell
+</a></li><li class="dropdown-item"><!----> <a href="/src/ts/ts1/" class="nav-link">
+  typescript
+</a></li><li class="dropdown-item"><!----> <a href="/src/dataStructure/01jsEnv/" class="nav-link">
+  dataStructure
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="实用工具" class="dropdown-title"><span class="title">实用工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="实用工具" class="mobile-dropdown-title"><span class="title">实用工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/src/nvm/index1/" class="nav-link">
+  nvm
+</a></li><li class="dropdown-item"><!----> <a href="/src/git/index1/" class="nav-link">
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/src/mock/index1/" class="nav-link">
+  mock
+</a></li><li class="dropdown-item"><!----> <a href="/src/vscode/plugins/" class="nav-link">
+  vscode
+</a></li><li class="dropdown-item"><!----> <a href="/src/lint/eslint.html" class="nav-link">
+  lint
+</a></li><li class="dropdown-item"><!----> <a href="/src/vuepress/index1.html" class="nav-link">
+  vuepress
+</a></li></ul></div></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/src/faq/js/all/" class="nav-link">
+  日常笔记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础笔记" class="dropdown-title"><span class="title">基础笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础笔记" class="mobile-dropdown-title"><span class="title">基础笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/src/vue/01_introduction/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/src/webpack/index1/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/src/webApi/location/" class="nav-link">
+  webApi
+</a></li><li class="dropdown-item"><!----> <a href="/src/lgthm/index1/" class="nav-link">
+  lgthm
+</a></li><li class="dropdown-item"><!----> <a href="/src/reg/index1/" class="nav-link">
+  reg
+</a></li><li class="dropdown-item"><!----> <a href="/src/js/1_简介/" class="nav-link">
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/src/cmd/cmd1/" class="nav-link">
+  cmd
+</a></li><li class="dropdown-item"><!----> <a href="/src/shell/shell/" class="nav-link">
+  shell
+</a></li><li class="dropdown-item"><!----> <a href="/src/ts/ts1/" class="nav-link">
+  typescript
+</a></li><li class="dropdown-item"><!----> <a href="/src/dataStructure/01jsEnv/" class="nav-link">
+  dataStructure
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="实用工具" class="dropdown-title"><span class="title">实用工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="实用工具" class="mobile-dropdown-title"><span class="title">实用工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/src/nvm/index1/" class="nav-link">
+  nvm
+</a></li><li class="dropdown-item"><!----> <a href="/src/git/index1/" class="nav-link">
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/src/mock/index1/" class="nav-link">
+  mock
+</a></li><li class="dropdown-item"><!----> <a href="/src/vscode/plugins/" class="nav-link">
+  vscode
+</a></li><li class="dropdown-item"><!----> <a href="/src/lint/eslint.html" class="nav-link">
+  lint
+</a></li><li class="dropdown-item"><!----> <a href="/src/vuepress/index1.html" class="nav-link">
+  vuepress
+</a></li></ul></div></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>日常笔记</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>临时笔记</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>报错笔记</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>网页收藏</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>js</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>applets</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>demo</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>webpack</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/src/faq/webpack/" aria-current="page" class="active sidebar-link">webpack优化</a></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>新项目笔记</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="webpack优化"><a href="#webpack优化" class="header-anchor">#</a> webpack优化</h1> <ol><li>提高 Webpack 打包速度
+<ol><li>优化Loader搜索范围，指定哪些文件不通过loader处理</li> <li>cache-loader缓存loader处理结果，这样下次打包可以直接使用缓存结果而不需要重新打包</li> <li>多线程处理打包
+<ol><li>HappyPack，rules匹配文件，plugins配置loader和拆分多少个子进程</li> <li>thread-loader放置在其他 loader 之前， thread-loader 不是越多越好，也请只在耗时的loader 上使用。</li> <li>在Webpack3 中，我们一般使用 UglifyJS 来压缩代码，但是这个是单线程运行的，也就是说多个js文件需要被压缩，它需要一个个文件进行压缩，webpack-parallel-uglify-plugin 插件，该插件会开启多个子进程，把对多个文件压缩的工作分别给多个子进程去完成，但是每个子进程还是通过UglifyJS去压缩代码。无非就是变成了并行处理该压缩了，并行处理多个子任务，提高打包效率。来并行运行 UglifyJS，从而提高效率。在 Webpack4 中，我们就不需要以上这些操作了，只需要将 mode 设置为 production 就可以默认开启以上功能。</li></ol></li> <li>DllPlugin &amp; DllReferencePlugin<br>
+DllPlugin可以将特定的类库提前打包成动态链接库，当需要导入的模块在动态连接库里的时候，模块不用再次被打包，而是去动态连接库里获取。
+这种方式可以极大的减少打包类库的次数，只有当类库更新版本才有需要重新打包，并且也实现了将公共代码抽离成单独文件的优化方案。
+<code>webpack --config webpack.dll.js --mode development</code> 生成依赖文件用 DllReferencePlugin 将依赖文件引入项目中</li> <li>noParse用于配置那些模块文件的内容不需要进行解析（即无依赖） 的第三方大型类库（例如jquery,lodash）等，使用该属性让 Webpack不扫描该文件，以提高整体的构建速度。</li> <li>IgnorePlugin 忽略某些特定的模块，让webpack 不把这些指定的模块打包进去。</li></ol> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">// 参数中第一个参数是匹配引入模块路径的正则表达式，第二个参数是匹配模块的对应上下文，即所在目录名。</span>
+plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+  <span class="token keyword">new</span> <span class="token class-name">webpack<span class="token punctuation">.</span>IgnorePlugin</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^\.\/locale</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">moment$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">)</span>
+<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ol start="7"><li>打包文件分析工具webpack-bundle-analyzer 插件的功能是可以生成代码分析报告，帮助提升代码质量和网站性能。</li> <li>费时分析speed-measure-webpack-plugin，打包速度测量插件。这个插件可以测量webpack构建速度，可以测量打包过程中每一步所消耗的时间，然后让我们可以有针对的去优化代码。</li> <li>resolve.extensions：用来表明文件后缀列表，默认查找顺序是 ['.js', '.json']，如果你的导入文件没有添加后缀就会按照这个顺序查找文件。我们应该尽可能减少后缀列表长度，然后将出现频率高的后缀排在前面</li> <li>resolve.extensions：用来表明文件后缀列表，默认查找顺序是 ['.js', '.json']，如果你的导入文件没有添加后缀就会按照这个顺序查找文件。我们应该尽可能减少后缀列表长度，然后将出现频率高的后缀排在前面</li></ol></li> <li>减少 Webpack 打包后的文件体积
+<ol><li>对图片进行压缩和优化image-webpack-loader这个loder可以帮助我们对打包后的图片进行压缩和优化</li> <li>删除无用的CSS样式purgecss-webpack-plugin可以去除未使用的CSS,此插件必须和CSS代码抽离插件mini-css-extract-plugin配合使用。</li> <li>以CDN方式加载资源：一般常用的类库都会发布在CDN上，因此，我们可以在项目中以CDN的方式加载资源，这样我们就不用对资源进行打包，可以大大减少打包后的文件体积。使用到add-asset-html-cdn-webpack-plugin插件</li> <li>开启Tree Shaking删除代码中未被引用的代码，在webpack4中，当我们将mode设置为production时，会自动进行tree-shaking。</li> <li>开启Scope Hoisting可以让 Webpack 打包出来的代码文件更小、运行的更快， 它又译作 &quot;作用域提升&quot;，是在 Webpack3 中新推出的功能。在webpack4中，当我们将mode设置为production时会自动开启。</li> <li>按需加载 &amp; 动态加载</li></ol></li></ol></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/src/faq/demo/" class="prev">
+        日常案例笔记
+      </a></span> <span class="next"><a href="/src/faq/cph/">
+        云手机
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3a51ea5a.js" defer></script><script src="/assets/js/2.7a6cbd8d.js" defer></script><script src="/assets/js/40.54919f77.js" defer></script>
+  </body>
+</html>

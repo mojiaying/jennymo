@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>第一章 JS 基础 | Jenny 的学习笔记</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="stylesheet" href="/css/style.css">
+    <script charset="utf-8" src="/js/main.js"></script>
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/assets/css/0.styles.fdee9969.css" as="style"><link rel="preload" href="/assets/js/app.3a51ea5a.js" as="script"><link rel="preload" href="/assets/js/2.7a6cbd8d.js" as="script"><link rel="preload" href="/assets/js/13.8cec5501.js" as="script"><link rel="prefetch" href="/assets/js/10.ae26a9ae.js"><link rel="prefetch" href="/assets/js/11.9984dc0f.js"><link rel="prefetch" href="/assets/js/12.5003a7a3.js"><link rel="prefetch" href="/assets/js/14.b6dc96bf.js"><link rel="prefetch" href="/assets/js/15.882b2634.js"><link rel="prefetch" href="/assets/js/16.5857d63e.js"><link rel="prefetch" href="/assets/js/17.5a1f4e3a.js"><link rel="prefetch" href="/assets/js/18.7c332761.js"><link rel="prefetch" href="/assets/js/19.a92697b0.js"><link rel="prefetch" href="/assets/js/20.2baf9e65.js"><link rel="prefetch" href="/assets/js/21.8d7ffc0a.js"><link rel="prefetch" href="/assets/js/22.8c266082.js"><link rel="prefetch" href="/assets/js/23.4dcb8684.js"><link rel="prefetch" href="/assets/js/24.7e1b8bd7.js"><link rel="prefetch" href="/assets/js/25.6893b5a6.js"><link rel="prefetch" href="/assets/js/26.cdba9aa9.js"><link rel="prefetch" href="/assets/js/27.4436af58.js"><link rel="prefetch" href="/assets/js/28.134e0d73.js"><link rel="prefetch" href="/assets/js/29.cc751d36.js"><link rel="prefetch" href="/assets/js/3.9025e100.js"><link rel="prefetch" href="/assets/js/30.76f84ac1.js"><link rel="prefetch" href="/assets/js/31.92d4f1ba.js"><link rel="prefetch" href="/assets/js/32.49fd4f20.js"><link rel="prefetch" href="/assets/js/33.966f66b4.js"><link rel="prefetch" href="/assets/js/34.f979adae.js"><link rel="prefetch" href="/assets/js/35.a87d9b31.js"><link rel="prefetch" href="/assets/js/36.e113d7c8.js"><link rel="prefetch" href="/assets/js/37.f4cb478d.js"><link rel="prefetch" href="/assets/js/38.41140f59.js"><link rel="prefetch" href="/assets/js/39.fe0182a6.js"><link rel="prefetch" href="/assets/js/4.d0c4069c.js"><link rel="prefetch" href="/assets/js/40.54919f77.js"><link rel="prefetch" href="/assets/js/41.bfd32d9d.js"><link rel="prefetch" href="/assets/js/42.d000c9cf.js"><link rel="prefetch" href="/assets/js/43.14f893af.js"><link rel="prefetch" href="/assets/js/44.19fe44b9.js"><link rel="prefetch" href="/assets/js/45.e1d0283a.js"><link rel="prefetch" href="/assets/js/46.2b561767.js"><link rel="prefetch" href="/assets/js/47.837d8d78.js"><link rel="prefetch" href="/assets/js/48.5e8286eb.js"><link rel="prefetch" href="/assets/js/49.6e2b25f0.js"><link rel="prefetch" href="/assets/js/5.325850c0.js"><link rel="prefetch" href="/assets/js/50.c03b0bcd.js"><link rel="prefetch" href="/assets/js/51.d397769e.js"><link rel="prefetch" href="/assets/js/52.7d92bb33.js"><link rel="prefetch" href="/assets/js/53.31df2ef1.js"><link rel="prefetch" href="/assets/js/54.6f014636.js"><link rel="prefetch" href="/assets/js/55.7026ba4d.js"><link rel="prefetch" href="/assets/js/56.8610bd61.js"><link rel="prefetch" href="/assets/js/57.4dab35be.js"><link rel="prefetch" href="/assets/js/58.36461e34.js"><link rel="prefetch" href="/assets/js/59.dd40fcbf.js"><link rel="prefetch" href="/assets/js/6.e07a44fa.js"><link rel="prefetch" href="/assets/js/60.af6fca51.js"><link rel="prefetch" href="/assets/js/61.437fcd37.js"><link rel="prefetch" href="/assets/js/62.6c16153a.js"><link rel="prefetch" href="/assets/js/63.e5c7b9b6.js"><link rel="prefetch" href="/assets/js/64.86a63bc0.js"><link rel="prefetch" href="/assets/js/65.2a59dc53.js"><link rel="prefetch" href="/assets/js/66.7bbf2507.js"><link rel="prefetch" href="/assets/js/67.441d4566.js"><link rel="prefetch" href="/assets/js/68.121d6fae.js"><link rel="prefetch" href="/assets/js/69.6223f594.js"><link rel="prefetch" href="/assets/js/7.d6ae9493.js"><link rel="prefetch" href="/assets/js/70.f2fd6f90.js"><link rel="prefetch" href="/assets/js/71.7e167845.js"><link rel="prefetch" href="/assets/js/72.a8004dd5.js"><link rel="prefetch" href="/assets/js/73.c51c3267.js"><link rel="prefetch" href="/assets/js/74.4c6489a8.js"><link rel="prefetch" href="/assets/js/75.53468a29.js"><link rel="prefetch" href="/assets/js/76.2d29594d.js"><link rel="prefetch" href="/assets/js/77.e13fff63.js"><link rel="prefetch" href="/assets/js/78.5ae5d561.js"><link rel="prefetch" href="/assets/js/79.100ae315.js"><link rel="prefetch" href="/assets/js/8.ce44b8a3.js"><link rel="prefetch" href="/assets/js/80.cf1b2332.js"><link rel="prefetch" href="/assets/js/81.a3b1864f.js"><link rel="prefetch" href="/assets/js/82.223714d2.js"><link rel="prefetch" href="/assets/js/9.421c83c8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.fdee9969.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/jenny.png" alt="Jenny 的学习笔记" class="logo"> <span class="site-name can-hide">Jenny 的学习笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/src/faq/js/all/" class="nav-link">
+  日常笔记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础笔记" class="dropdown-title"><span class="title">基础笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础笔记" class="mobile-dropdown-title"><span class="title">基础笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/src/vue/01_introduction/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/src/webpack/index1/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/src/webApi/location/" class="nav-link">
+  webApi
+</a></li><li class="dropdown-item"><!----> <a href="/src/lgthm/index1/" class="nav-link">
+  lgthm
+</a></li><li class="dropdown-item"><!----> <a href="/src/reg/index1/" class="nav-link">
+  reg
+</a></li><li class="dropdown-item"><!----> <a href="/src/js/1_简介/" class="nav-link">
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/src/cmd/cmd1/" class="nav-link">
+  cmd
+</a></li><li class="dropdown-item"><!----> <a href="/src/shell/shell/" class="nav-link">
+  shell
+</a></li><li class="dropdown-item"><!----> <a href="/src/ts/ts1/" class="nav-link">
+  typescript
+</a></li><li class="dropdown-item"><!----> <a href="/src/dataStructure/01jsEnv/" class="nav-link">
+  dataStructure
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="实用工具" class="dropdown-title"><span class="title">实用工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="实用工具" class="mobile-dropdown-title"><span class="title">实用工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/src/nvm/index1/" class="nav-link">
+  nvm
+</a></li><li class="dropdown-item"><!----> <a href="/src/git/index1/" class="nav-link">
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/src/mock/index1/" class="nav-link">
+  mock
+</a></li><li class="dropdown-item"><!----> <a href="/src/vscode/plugins/" class="nav-link">
+  vscode
+</a></li><li class="dropdown-item"><!----> <a href="/src/lint/eslint.html" class="nav-link">
+  lint
+</a></li><li class="dropdown-item"><!----> <a href="/src/vuepress/index1.html" class="nav-link">
+  vuepress
+</a></li></ul></div></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/src/faq/js/all/" class="nav-link">
+  日常笔记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础笔记" class="dropdown-title"><span class="title">基础笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础笔记" class="mobile-dropdown-title"><span class="title">基础笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/src/vue/01_introduction/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/src/webpack/index1/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/src/webApi/location/" class="nav-link">
+  webApi
+</a></li><li class="dropdown-item"><!----> <a href="/src/lgthm/index1/" class="nav-link">
+  lgthm
+</a></li><li class="dropdown-item"><!----> <a href="/src/reg/index1/" class="nav-link">
+  reg
+</a></li><li class="dropdown-item"><!----> <a href="/src/js/1_简介/" class="nav-link">
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/src/cmd/cmd1/" class="nav-link">
+  cmd
+</a></li><li class="dropdown-item"><!----> <a href="/src/shell/shell/" class="nav-link">
+  shell
+</a></li><li class="dropdown-item"><!----> <a href="/src/ts/ts1/" class="nav-link">
+  typescript
+</a></li><li class="dropdown-item"><!----> <a href="/src/dataStructure/01jsEnv/" class="nav-link">
+  dataStructure
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="实用工具" class="dropdown-title"><span class="title">实用工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="实用工具" class="mobile-dropdown-title"><span class="title">实用工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/src/nvm/index1/" class="nav-link">
+  nvm
+</a></li><li class="dropdown-item"><!----> <a href="/src/git/index1/" class="nav-link">
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/src/mock/index1/" class="nav-link">
+  mock
+</a></li><li class="dropdown-item"><!----> <a href="/src/vscode/plugins/" class="nav-link">
+  vscode
+</a></li><li class="dropdown-item"><!----> <a href="/src/lint/eslint.html" class="nav-link">
+  lint
+</a></li><li class="dropdown-item"><!----> <a href="/src/vuepress/index1.html" class="nav-link">
+  vuepress
+</a></li></ul></div></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>数据结构</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/src/dataStructure/01jsEnv.html" aria-current="page" class="active sidebar-link">第一章 JS 基础</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/src/dataStructure/01jsEnv.html#js执行环境" class="sidebar-link">JS执行环境</a></li><li class="sidebar-sub-header"><a href="/src/dataStructure/01jsEnv.html#声明与初始化变量" class="sidebar-link">声明与初始化变量</a></li><li class="sidebar-sub-header"><a href="/src/dataStructure/01jsEnv.html#运算符与数学函数库" class="sidebar-link">运算符与数学函数库</a></li><li class="sidebar-sub-header"><a href="/src/dataStructure/01jsEnv.html#判断" class="sidebar-link">判断</a></li><li class="sidebar-sub-header"><a href="/src/dataStructure/01jsEnv.html#循环结构" class="sidebar-link">循环结构</a></li><li class="sidebar-sub-header"><a href="/src/dataStructure/01jsEnv.html#函数" class="sidebar-link">函数</a></li><li class="sidebar-sub-header"><a href="/src/dataStructure/01jsEnv.html#作用域" class="sidebar-link">作用域</a></li><li class="sidebar-sub-header"><a href="/src/dataStructure/01jsEnv.html#递归" class="sidebar-link">递归</a></li><li class="sidebar-sub-header"><a href="/src/dataStructure/01jsEnv.html#面向对象编程" class="sidebar-link">面向对象编程</a></li></ul></li><li><a href="/src/dataStructure/02array.html" class="sidebar-link">第二章 数组</a></li><li><a href="/src/dataStructure/03iteration.html" class="sidebar-link">第三章 数组迭代</a></li><li><a href="/src/dataStructure/04list.html" class="sidebar-link">列表</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="第一章-js-基础"><a href="#第一章-js-基础" class="header-anchor">#</a> 第一章 JS 基础</h1> <h2 id="js执行环境"><a href="#js执行环境" class="header-anchor">#</a> JS执行环境</h2> <p>JS历来是在浏览器里运行的语言，后来发展为可以桌面执行或在服务器上执行， 可以通过javascript shell 或者在vscode中安装run code 插件实现。</p> <h2 id="声明与初始化变量"><a href="#声明与初始化变量" class="header-anchor">#</a> 声明与初始化变量</h2> <p><strong>什么叫变量提升：</strong><br>
+Js在执行代码之前会从上到下把代码分析一遍， 即是代码预解析，<br>
+在代码预解析时对所有var和function声明的变量进行变量提升，被提升的变量可以在声明之前使用
+<strong>var let/const 的区别：</strong></p> <table><thead><tr><th style="text-align:left;">名称</th> <th>var</th> <th>let / const</th></tr></thead> <tbody><tr><td style="text-align:left;">变量提升</td> <td>创建和初始化都被提升， 可以重复声明</td> <td>创建过程被提升，初始化没有提升， 不能重复声明</td></tr> <tr><td style="text-align:left;">预解析与执行过程</td> <td>预解析时创建 ，初始化为undefined，执行时赋值为声明的值</td> <td>预解析时创建，执行是初始化为声明的值</td></tr> <tr><td style="text-align:left;">声明前使用</td> <td>undefined</td> <td>块级顶部形成临时行死区， 声明前使用会报错</td></tr> <tr><td style="text-align:left;">作用域</td> <td>函数作用域</td> <td>块级作用域</td></tr> <tr><td style="text-align:left;">全局声明挂载位置</td> <td>声明的全局变量挂在window下</td> <td>声明的全局变量挂载在块级作用域script下面</td></tr></tbody></table> <ul><li>对未声明的变量初始化，该变量就是全局变量</li> <li>let 和 const 唯一区别 const 只有「创建」和「初始化」，没有「赋值」过程，const初始化后修改会报错（但引用类型的值可以改变）， let在初始化之后改变变量值即是赋值过程。</li> <li>const声明的引用类型的值可以用Object.freeze(obj) 冻结变量</li> <li>function 声明变量 ，「创建」「初始化」和「赋值」都被提升了，function 声明的变量可以在声明之前正常使用</li> <li>this声明变量多用于函数内部，它永远指向调用他的那个对象， this声明的变量是作用于上下文的。</li></ul> <h2 id="运算符与数学函数库"><a href="#运算符与数学函数库" class="header-anchor">#</a> 运算符与数学函数库</h2> <p><strong>算数运算符：</strong><br>
++(加)， -(减)， *(乘)， /(除)， %(取余)， ++(累加)， --(递减)<br> <strong>赋值运算符:</strong><br>
+=，  +=，  -=， *=， /=，  %=<br> <strong>比较运算符:</strong><br>
+==(等)，  ===(全等)，  !=(不等)，<span style="background:yellow;"> !==(不全等) </span>， &gt;(大于)，  &lt;(小于)</p> <p><strong>数学函数库</strong><br>
+JS 数学函数库<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Math" target="_blank" rel="noopener noreferrer">Math<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 是一个内置对象，它拥有一些数学常数属性和数学函数方法, 所有属性与方法都是静态的。
+常见的函数有</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>Math<span class="token punctuation">.</span><span class="token function">abs</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token comment">// 返回一个数的绝对值</span>
+Math<span class="token punctuation">.</span><span class="token function">cbrt</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token comment">// 返回一个数的立方根。</span>
+Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment">// 返回一个 0 到 1 之间的伪随机数。</span>
+Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token comment">//返回四舍五入后的整数。</span>
+Math<span class="token punctuation">.</span><span class="token function">sqrt</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token comment">// 返回一个数的平方根。</span>
+Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token comment">// 返回小于一个数的最大整数，即一个数向下取整后的值。</span>
+Math<span class="token punctuation">.</span><span class="token function">ceil</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token comment">// 返回大于一个数的最小整数，即一个数向上取整后的值。</span>
+Math<span class="token punctuation">.</span><span class="token constant">PI</span> <span class="token comment">// 圆周率，常用于角度和弧度转换</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="判断"><a href="#判断" class="header-anchor">#</a> 判断</h2> <ul><li>if 一般用于连续区间值判断，复杂的多条件判断，或者动态表达式判断</li> <li>switch 一般用于单一条件的判断</li></ul> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">switch</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token comment">// 没有break不会中断</span>
+	<span class="token keyword">case</span> <span class="token number">1</span><span class="token operator">:</span>
+	<span class="token keyword">case</span> <span class="token number">2</span><span class="token operator">:</span>
+	<span class="token comment">//相當於if(num==1 || num==2)</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;show 1 or 2!!&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">break</span><span class="token punctuation">;</span>
+	<span class="token keyword">case</span> <span class="token number">3</span><span class="token operator">:</span>
+	<span class="token keyword">case</span> <span class="token number">4</span><span class="token operator">:</span>
+	<span class="token comment">//相當於if(num==3 || num==4)</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;show 3 or 4!!&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">break</span><span class="token punctuation">;</span>
+	<span class="token keyword">default</span><span class="token operator">:</span>
+	<span class="token comment">//相當於else</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;show others!!&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p><strong>if 和switch转换</strong></p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>  <span class="token keyword">if</span> <span class="token punctuation">(</span>score <span class="token operator">&lt;</span> <span class="token number">60</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;不及格&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+  <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>score <span class="token operator">&lt;</span> <span class="token number">75</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;合格&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>score <span class="token operator">&lt;</span><span class="token number">85</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;良好&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;优秀&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 匹配表达式是否为true</span>
+  <span class="token keyword">switch</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> score <span class="token operator">&lt;</span> <span class="token number">60</span><span class="token operator">:</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;不及格&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> score <span class="token operator">&lt;</span> <span class="token number">75</span> <span class="token operator">:</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;合格&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> score <span class="token operator">&lt;</span><span class="token number">85</span> <span class="token operator">:</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;良好&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">default</span> <span class="token operator">:</span> 
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;优秀&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><h2 id="循环结构"><a href="#循环结构" class="header-anchor">#</a> 循环结构</h2> <h3 id="循环结构的执行步骤"><a href="#循环结构的执行步骤" class="header-anchor">#</a> 循环结构的执行步骤</h3> <ol><li>声明<code>循环变量</code>；</li> <li>判断<code>循环条件</code>;</li> <li>执行<code>循环体</code>；</li> <li>更新<code>循环变量</code>；</li> <li>然后循环执行2-4，直到条件不成立，跳出循环。</li></ol> <h3 id="环控制语句"><a href="#环控制语句" class="header-anchor">#</a> 环控制语句</h3> <ol><li>break：跳出本层循环，继续执行循环后面的语句。<br>
+如果循环有多层，则break只能跳出一层。</li> <li>continue：跳过本次循环剩余的代码，继续执行下一次循环。
+①对与for循环，continue之后执行的语句，是循环变量更新语句(i++)；
+②对于while、do-while循环，continue之后执行的语句，是循环条件判断；
+　因此，使用这两个循环时，必须将continue放到循环变量更新语句(i++)之后使用，否则，会跳过循环变量更新语句(i++)进入死循环。</li></ol> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>　
+   <span class="token keyword">if</span><span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+       <span class="token keyword">continue</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//1 2 3 5 6 7 8 9</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//1 2 3</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="_1-1-while-循环"><a href="#_1-1-while-循环" class="header-anchor">#</a> 1.1 while 循环</h3> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>  <span class="token comment">//变量初始化</span>
+<span class="token keyword">while</span> <span class="token punctuation">(</span>i<span class="token operator">&lt;=</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment">// 循环条件</span>
+<span class="token comment">// 循环体</span>
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+	i<span class="token operator">++</span><span class="token punctuation">;</span> <span class="token comment">//循环变量更新，是为了避免出现&quot;死循环&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="_1-2-do-while循环"><a href="#_1-2-do-while循环" class="header-anchor">#</a> 1.2 do-while循环</h3> <p>do-while 循环跟while循环相似， 但do-while先执行再判断，即使初始条件不成立，do-while循环至少执行一次；</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+<span class="token keyword">do</span><span class="token punctuation">{</span>
+ console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+ i<span class="token operator">--</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">while</span><span class="token punctuation">(</span>i<span class="token operator">&gt;</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token comment">// 3 ， 2， 1</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="_2-1-for-循环"><a href="#_2-1-for-循环" class="header-anchor">#</a> 2.1 for 循环</h3> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">for</span><span class="token punctuation">(</span>初始化循环变量①；条件②；更新循环变量③<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	循环体④
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ol><li>三个表达式：①声明循环变量；②判断循环条件；③更新循环变量</li> <li>三个表达式都可以有多部分组成，第二部分多个判断条件用&amp;&amp; ||连接，第一三部分用逗号分割</li> <li>执行特点：先判断再执行</li> <li>执行顺序： 初始化① 》 判断条件② 》 执行循环体④ 》 更新循环变量③  ， ②④③ ②④③… …直到②为假结束</li> <li>主要用于确定循环次数的循环</li></ol> <h3 id="_2-2-for-in-循环"><a href="#_2-2-for-in-循环" class="header-anchor">#</a> 2.2 for in 循环</h3> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>name<span class="token operator">:</span><span class="token string">'Jenny'</span><span class="token punctuation">,</span>age<span class="token operator">:</span><span class="token number">18</span><span class="token punctuation">}</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> key <span class="token keyword">in</span> obj<span class="token punctuation">)</span><span class="token punctuation">{</span>
+ console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span>obj<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// name Jenny</span>
+<span class="token comment">// age 18</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ol><li>for...in循环主要是为遍历对象而设计的，不适用于遍历数组</li> <li>key代表对象的 键 值，obj[key] 代表对应的 值，也可用于数组遍历，但key输出为字符串，直接计算会出错。</li> <li>注意： for in 循环的时候，不仅遍历自身的属性，还会找到 prototype 上去，所以最好在循环体内加一个判断，就用 obj[i].hasOwnProperty(i)判断一个属性是不是对象自身上的属性</li></ol> <h3 id="_2-3-for-of-循环"><a href="#_2-3-for-of-循环" class="header-anchor">#</a> 2.3 for of 循环</h3> <ol><li>ES6新增语句，用来替代 for in 和 forEach，遍历获得键值，不同于forEach方法，它可以与break、continue和return配合使用</li> <li>可遍历 Arrays（数组）, Strings（字符串）,DOM NodeList 对象、arguments对象的例子， Maps（映射）, Sets（集合）等可迭代(Iterable data)的数据结构</li></ol> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">// 数组</span>
+<span class="token keyword">let</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span>a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c<span class="token punctuation">,</span> d<span class="token punctuation">]</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> val <span class="token keyword">of</span> arr<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// a b c d</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 字符串</span>
+<span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token string">&quot;hello&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> s <span class="token keyword">of</span> str<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// h e l l o</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// DOM NodeList对象</span>
+<span class="token keyword">let</span> paras <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">&quot;p&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> p <span class="token keyword">of</span> paras<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  p<span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;test&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// arguments对象</span>
+<span class="token keyword">function</span> <span class="token function">printArgs</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> x <span class="token keyword">of</span> arguments<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token function">printArgs</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token string">'b'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 'a' 'b'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><h2 id="函数"><a href="#函数" class="header-anchor">#</a> 函数</h2> <h2 id="作用域"><a href="#作用域" class="header-anchor">#</a> 作用域</h2> <p>Js代码执行前，浏览器会给一个全局作用域window，Window分两个模块一个是存储模块一个是执行模块<br>
+存储模块：找到所有的var和function 关键字给这些变量添加内存地址<br>
+执行模块：代码从上到下执行，遇到变量就会去存储模块查找，有和没有<br>
+有就使用，没有就继续向父级作用域查找直到window下结束，这种查找机制叫作用域链</p> <p><strong>eg1:函数内部作用域</strong></p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">10</span>
+<span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function">show</span><span class="token punctuation">(</span><span class="token parameter">f</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> a <span class="token operator">=</span>  <span class="token number">20</span>
+  <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token function">show</span><span class="token punctuation">(</span>fn<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>打印结果： 10
+解释：每个函数都有自己独立的执行环境，在代码完成的时候就确定了自己的作用域， 虽然fn被show调用了，但还是在自己的执行环境里面行动的。</p> <p><strong>eg2：对象属性作用域</strong></p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">let</span> <span class="token function-variable function">fn</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>fn<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// function() { console.log(fn) }</span>
+<span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">fn1</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>fn1<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+obj<span class="token punctuation">.</span><span class="token function">fn1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 报错fn1 undefined</span>
+<span class="token comment">// 解释：fn1的执行环境是obj, 函数内部的作用域链包括函数fn1中和全局, 但都没有fn1这个东西，所以报错</span>
+<span class="token comment">// 如果要在obj中找的话要加关键字this</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p><strong>eg3:预解析</strong></p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token parameter">a</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token comment">// funciton a() { aletr(1) }</span>
+  <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">2</span>
+  <span class="token keyword">function</span> <span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token comment">// 2</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>解释： function声明创建、初始化和赋值都一起提前，可以在声明之前使用，同一作用域下var的赋值没有提前，所以会在function之后，同一个变量名会把function覆盖。<br> <strong>eg4:闭包</strong></p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> a <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">;</span> a<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>执行逻辑:
+在全局执行环境里先执行for循环，for循环会执行5次，每次都会执行setTimeout函数<br>
+由于JavaScript是单线程的，只有一个执行栈,所以会先把setTimeout函数先放进一个任务队列中, 等到执行栈中执行完了之后再完成任务队列中的任务,<br>
+for循环执行完了之后i=5, 再执行5个setTimeout, console.log(i)处于全局执行环境,所以每个setTimeout打印出来的都是4<br>
+解决：</p> <ol><li>使用let声明变量</li> <li>使用闭包</li></ol> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> a <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">;</span> a<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">x</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>闭包的含义就是说函数可以访问到自己的执行环境中访问不到的变量。</p> <h2 id="递归"><a href="#递归" class="header-anchor">#</a> 递归</h2> <p>递归：函数将自身作为子例程调用
+递归的思想是把一个大型复杂问题层层转化为一个与原问题规模更小的问题，问题被拆解成子问题后，递归调用继续进行，直到子问题无需进一步递归就可以解决的地步为止。</p> <p>为了确保递归正确工作，递归程序应该包含2个属性：</p> <ol><li>基本情况（bottom cases），基本情况用于保证程序调用及时返回，不在继续递归，保证了程序可终止。</li> <li>递推关系（recurrentce relation），可将所有其他情况拆分到基本案例。</li></ol> <p><strong>特点：</strong></p> <ol><li>优雅性：大大减少了程序的代码量，而且很好理解。递归的能力在于用有限的语句来定义对象的无限集合。</li> <li>反向性：由于递归调用程序需要维护调用栈，而栈（我们在上文提过）具有后进先出的特征，因此递归程序适合满足取反类需求。
+什么时候考虑递归</li> <li>递推关系：递归程序可以较明显的发现递推关系，反过来也可以这么说，具有递推关系的问题基本都可以通过递归求解</li></ol> <p>抓住问题本身是否可以通过层层拆解到最小粒度来得解</p> <h2 id="面向对象编程"><a href="#面向对象编程" class="header-anchor">#</a> 面向对象编程</h2> <p>eg: 一个检查银行账户对象的构造函数</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">Checking</span><span class="token punctuation">(</span><span class="token parameter">amount</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>balance <span class="token operator">=</span> amount <span class="token comment">// 属性</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>deposit <span class="token operator">=</span> deposit <span class="token comment">// 方法</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>withdraw <span class="token operator">=</span> withdraw <span class="token comment">// 方法</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>toString <span class="token operator">=</span> toString <span class="token comment">// 方法</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">deposit</span><span class="token punctuation">(</span><span class="token parameter">amount</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>balance <span class="token operator">+=</span> amount
+<span class="token punctuation">}</span>
+funciton <span class="token function">withdraw</span><span class="token punctuation">(</span><span class="token parameter">amount</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  amount <span class="token operator">&lt;=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>balance <span class="token operator">?</span> <span class="token keyword">this</span><span class="token punctuation">.</span>balance <span class="token operator">-=</span> amount <span class="token operator">:</span> <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'Insufficient funds'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function">toString</span><span class="token punctuation">(</span><span class="token parameter">amount</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token string">&quot;Balance: &quot;</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>balance
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/src/dataStructure/02array.html">
+        第二章 数组
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3a51ea5a.js" defer></script><script src="/assets/js/2.7a6cbd8d.js" defer></script><script src="/assets/js/13.8cec5501.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>构建速度层面优化 | Jenny 的学习笔记</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="stylesheet" href="/css/style.css">
+    <script charset="utf-8" src="/js/main.js"></script>
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/assets/css/0.styles.fdee9969.css" as="style"><link rel="preload" href="/assets/js/app.3a51ea5a.js" as="script"><link rel="preload" href="/assets/js/2.7a6cbd8d.js" as="script"><link rel="preload" href="/assets/js/80.cf1b2332.js" as="script"><link rel="prefetch" href="/assets/js/10.ae26a9ae.js"><link rel="prefetch" href="/assets/js/11.9984dc0f.js"><link rel="prefetch" href="/assets/js/12.5003a7a3.js"><link rel="prefetch" href="/assets/js/13.8cec5501.js"><link rel="prefetch" href="/assets/js/14.b6dc96bf.js"><link rel="prefetch" href="/assets/js/15.882b2634.js"><link rel="prefetch" href="/assets/js/16.5857d63e.js"><link rel="prefetch" href="/assets/js/17.5a1f4e3a.js"><link rel="prefetch" href="/assets/js/18.7c332761.js"><link rel="prefetch" href="/assets/js/19.a92697b0.js"><link rel="prefetch" href="/assets/js/20.2baf9e65.js"><link rel="prefetch" href="/assets/js/21.8d7ffc0a.js"><link rel="prefetch" href="/assets/js/22.8c266082.js"><link rel="prefetch" href="/assets/js/23.4dcb8684.js"><link rel="prefetch" href="/assets/js/24.7e1b8bd7.js"><link rel="prefetch" href="/assets/js/25.6893b5a6.js"><link rel="prefetch" href="/assets/js/26.cdba9aa9.js"><link rel="prefetch" href="/assets/js/27.4436af58.js"><link rel="prefetch" href="/assets/js/28.134e0d73.js"><link rel="prefetch" href="/assets/js/29.cc751d36.js"><link rel="prefetch" href="/assets/js/3.9025e100.js"><link rel="prefetch" href="/assets/js/30.76f84ac1.js"><link rel="prefetch" href="/assets/js/31.92d4f1ba.js"><link rel="prefetch" href="/assets/js/32.49fd4f20.js"><link rel="prefetch" href="/assets/js/33.966f66b4.js"><link rel="prefetch" href="/assets/js/34.f979adae.js"><link rel="prefetch" href="/assets/js/35.a87d9b31.js"><link rel="prefetch" href="/assets/js/36.e113d7c8.js"><link rel="prefetch" href="/assets/js/37.f4cb478d.js"><link rel="prefetch" href="/assets/js/38.41140f59.js"><link rel="prefetch" href="/assets/js/39.fe0182a6.js"><link rel="prefetch" href="/assets/js/4.d0c4069c.js"><link rel="prefetch" href="/assets/js/40.54919f77.js"><link rel="prefetch" href="/assets/js/41.bfd32d9d.js"><link rel="prefetch" href="/assets/js/42.d000c9cf.js"><link rel="prefetch" href="/assets/js/43.14f893af.js"><link rel="prefetch" href="/assets/js/44.19fe44b9.js"><link rel="prefetch" href="/assets/js/45.e1d0283a.js"><link rel="prefetch" href="/assets/js/46.2b561767.js"><link rel="prefetch" href="/assets/js/47.837d8d78.js"><link rel="prefetch" href="/assets/js/48.5e8286eb.js"><link rel="prefetch" href="/assets/js/49.6e2b25f0.js"><link rel="prefetch" href="/assets/js/5.325850c0.js"><link rel="prefetch" href="/assets/js/50.c03b0bcd.js"><link rel="prefetch" href="/assets/js/51.d397769e.js"><link rel="prefetch" href="/assets/js/52.7d92bb33.js"><link rel="prefetch" href="/assets/js/53.31df2ef1.js"><link rel="prefetch" href="/assets/js/54.6f014636.js"><link rel="prefetch" href="/assets/js/55.7026ba4d.js"><link rel="prefetch" href="/assets/js/56.8610bd61.js"><link rel="prefetch" href="/assets/js/57.4dab35be.js"><link rel="prefetch" href="/assets/js/58.36461e34.js"><link rel="prefetch" href="/assets/js/59.dd40fcbf.js"><link rel="prefetch" href="/assets/js/6.e07a44fa.js"><link rel="prefetch" href="/assets/js/60.af6fca51.js"><link rel="prefetch" href="/assets/js/61.437fcd37.js"><link rel="prefetch" href="/assets/js/62.6c16153a.js"><link rel="prefetch" href="/assets/js/63.e5c7b9b6.js"><link rel="prefetch" href="/assets/js/64.86a63bc0.js"><link rel="prefetch" href="/assets/js/65.2a59dc53.js"><link rel="prefetch" href="/assets/js/66.7bbf2507.js"><link rel="prefetch" href="/assets/js/67.441d4566.js"><link rel="prefetch" href="/assets/js/68.121d6fae.js"><link rel="prefetch" href="/assets/js/69.6223f594.js"><link rel="prefetch" href="/assets/js/7.d6ae9493.js"><link rel="prefetch" href="/assets/js/70.f2fd6f90.js"><link rel="prefetch" href="/assets/js/71.7e167845.js"><link rel="prefetch" href="/assets/js/72.a8004dd5.js"><link rel="prefetch" href="/assets/js/73.c51c3267.js"><link rel="prefetch" href="/assets/js/74.4c6489a8.js"><link rel="prefetch" href="/assets/js/75.53468a29.js"><link rel="prefetch" href="/assets/js/76.2d29594d.js"><link rel="prefetch" href="/assets/js/77.e13fff63.js"><link rel="prefetch" href="/assets/js/78.5ae5d561.js"><link rel="prefetch" href="/assets/js/79.100ae315.js"><link rel="prefetch" href="/assets/js/8.ce44b8a3.js"><link rel="prefetch" href="/assets/js/81.a3b1864f.js"><link rel="prefetch" href="/assets/js/82.223714d2.js"><link rel="prefetch" href="/assets/js/9.421c83c8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.fdee9969.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/jenny.png" alt="Jenny 的学习笔记" class="logo"> <span class="site-name can-hide">Jenny 的学习笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/src/faq/js/all/" class="nav-link">
+  日常笔记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础笔记" class="dropdown-title"><span class="title">基础笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础笔记" class="mobile-dropdown-title"><span class="title">基础笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/src/vue/01_introduction/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/src/webpack/index1/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/src/webApi/location/" class="nav-link">
+  webApi
+</a></li><li class="dropdown-item"><!----> <a href="/src/lgthm/index1/" class="nav-link">
+  lgthm
+</a></li><li class="dropdown-item"><!----> <a href="/src/reg/index1/" class="nav-link">
+  reg
+</a></li><li class="dropdown-item"><!----> <a href="/src/js/1_简介/" class="nav-link">
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/src/cmd/cmd1/" class="nav-link">
+  cmd
+</a></li><li class="dropdown-item"><!----> <a href="/src/shell/shell/" class="nav-link">
+  shell
+</a></li><li class="dropdown-item"><!----> <a href="/src/ts/ts1/" class="nav-link">
+  typescript
+</a></li><li class="dropdown-item"><!----> <a href="/src/dataStructure/01jsEnv/" class="nav-link">
+  dataStructure
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="实用工具" class="dropdown-title"><span class="title">实用工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="实用工具" class="mobile-dropdown-title"><span class="title">实用工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/src/nvm/index1/" class="nav-link">
+  nvm
+</a></li><li class="dropdown-item"><!----> <a href="/src/git/index1/" class="nav-link">
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/src/mock/index1/" class="nav-link">
+  mock
+</a></li><li class="dropdown-item"><!----> <a href="/src/vscode/plugins/" class="nav-link">
+  vscode
+</a></li><li class="dropdown-item"><!----> <a href="/src/lint/eslint.html" class="nav-link">
+  lint
+</a></li><li class="dropdown-item"><!----> <a href="/src/vuepress/index1.html" class="nav-link">
+  vuepress
+</a></li></ul></div></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/src/faq/js/all/" class="nav-link">
+  日常笔记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础笔记" class="dropdown-title"><span class="title">基础笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础笔记" class="mobile-dropdown-title"><span class="title">基础笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/src/vue/01_introduction/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/src/webpack/index1/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/src/webApi/location/" class="nav-link">
+  webApi
+</a></li><li class="dropdown-item"><!----> <a href="/src/lgthm/index1/" class="nav-link">
+  lgthm
+</a></li><li class="dropdown-item"><!----> <a href="/src/reg/index1/" class="nav-link">
+  reg
+</a></li><li class="dropdown-item"><!----> <a href="/src/js/1_简介/" class="nav-link">
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/src/cmd/cmd1/" class="nav-link">
+  cmd
+</a></li><li class="dropdown-item"><!----> <a href="/src/shell/shell/" class="nav-link">
+  shell
+</a></li><li class="dropdown-item"><!----> <a href="/src/ts/ts1/" class="nav-link">
+  typescript
+</a></li><li class="dropdown-item"><!----> <a href="/src/dataStructure/01jsEnv/" class="nav-link">
+  dataStructure
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="实用工具" class="dropdown-title"><span class="title">实用工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="实用工具" class="mobile-dropdown-title"><span class="title">实用工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/src/nvm/index1/" class="nav-link">
+  nvm
+</a></li><li class="dropdown-item"><!----> <a href="/src/git/index1/" class="nav-link">
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/src/mock/index1/" class="nav-link">
+  mock
+</a></li><li class="dropdown-item"><!----> <a href="/src/vscode/plugins/" class="nav-link">
+  vscode
+</a></li><li class="dropdown-item"><!----> <a href="/src/lint/eslint.html" class="nav-link">
+  lint
+</a></li><li class="dropdown-item"><!----> <a href="/src/vuepress/index1.html" class="nav-link">
+  vuepress
+</a></li></ul></div></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>webpack笔记</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/src/webpack/index1.html" aria-current="page" class="active sidebar-link">构建速度层面优化</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/src/webpack/index1.html#_1-安装打包耗时分析插件" class="sidebar-link">1. 安装打包耗时分析插件：</a></li><li class="sidebar-sub-header"><a href="/src/webpack/index1.html#_2-优化loader搜索范围" class="sidebar-link">2.  优化Loader搜索范围</a></li><li class="sidebar-sub-header"><a href="/src/webpack/index1.html#_3-cache-loader缓存loader处理结果" class="sidebar-link">3. cache-loader缓存loader处理结果</a></li><li class="sidebar-sub-header"><a href="/src/webpack/index1.html#_4-happypack多线程打包" class="sidebar-link">4. happyPack多线程打包</a></li></ul></li><li><a href="/src/webpack/introduction.html" class="sidebar-link">webpack 是什么</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="构建速度层面优化"><a href="#构建速度层面优化" class="header-anchor">#</a> 构建速度层面优化</h1> <h2 id="_1-安装打包耗时分析插件"><a href="#_1-安装打包耗时分析插件" class="header-anchor">#</a> 1. 安装打包耗时分析插件：</h2> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>npm install <span class="token operator">--</span>save<span class="token operator">-</span>dev speed<span class="token operator">-</span>measure<span class="token operator">-</span>webpack<span class="token operator">-</span>plugin
+<span class="token comment">// 使用方法：</span>
+<span class="token comment">// 导入速度分析插件</span>
+<span class="token keyword">const</span> SpeedMeasurePlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;speed-measure-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 实例化插件</span>
+<span class="token keyword">const</span> smp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">SpeedMeasurePlugin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//调用wrap方法，传入webpack配置对象</span>
+smp<span class="token punctuation">.</span><span class="token function">wrap</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        plugins<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="_2-优化loader搜索范围"><a href="#_2-优化loader搜索范围" class="header-anchor">#</a> 2.  优化Loader搜索范围</h2> <ul><li>对于 Loader 来说，影响打包效率首当其冲必属 Babel 了。因为 Babel 会将代码转为字符串生成 AST，然后对 AST 继续进行转变最后再生成新的代码，项目越大，转换代码越多，效率就越低。当然了，我们是有办法优化的。</li> <li>首先我们可以优化 Loader 的文件搜索范围，在使用loader时,我们可以指定哪些文件不通过loader处理,或者指定哪些文件通过loader处理。</li></ul> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>  module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    module<span class="token operator">:</span> <span class="token punctuation">{</span>
+      rules<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token comment">// js 文件才使用 babel</span>
+          test<span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.js$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+          use<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'babel-loader'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token comment">// 只处理src文件夹下面的文件</span>
+          include<span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">'src'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token comment">// 不处理node_modules下面的文件</span>
+          exclude<span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">node_modules</span><span class="token regex-delimiter">/</span></span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><ul><li>对于babel-loader，我们还可以将 Babel 编译过的文件缓存起来，下次只需要编译更改过的代码文件即可，这样可以大幅度加快打包时间。</li></ul> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>loader<span class="token operator">:</span> <span class="token string">'babel-loader?cacheDirectory=true'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="_3-cache-loader缓存loader处理结果"><a href="#_3-cache-loader缓存loader处理结果" class="header-anchor">#</a> 3. cache-loader缓存loader处理结果</h2> <p>在一些性能开销较大的 loader 之前添加 cache-loader，以将处理结果缓存到磁盘里，这样下次打包可以直接使用缓存结果而不需要重新打包。</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">// 安装： npm install --save-dev cache-loader</span>
+<span class="token comment">// 使用：</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  module<span class="token operator">:</span> <span class="token punctuation">{</span>
+    rules<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token comment">// js 文件才使用 babel</span>
+        test<span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.js$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+        use<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token string">'cache-loader'</span><span class="token punctuation">,</span>
+          <span class="token operator">...</span>loaders
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        include<span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">'src'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>详细用法参照：<a href="https://www.webpackjs.com/loaders/cache-loader/" target="_blank" rel="noopener noreferrer">cache-loader<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="_4-happypack多线程打包"><a href="#_4-happypack多线程打包" class="header-anchor">#</a> 4. happyPack多线程打包</h2> <p>受限于Node是单线程运行的，所以 Webpack 在打包的过程中也是单线程的，特别是在执行 Loader 的时候，长时间编译的任务很多，这样就会导致等待的情况。那么我们可以使用一些方法将 Loader 的同步执行转换为并行，这样就能充分利用系统资源来提高打包速度了。</p> <ul><li>HappyPack能够让Webpack把打包任务分解给多个子线程去并发的执行，子线程处理完后再把结果发送给主线程。</li></ul> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">//安装开发依赖： npm i happypack  -D</span>
+<span class="token keyword">let</span> HappyPack <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'happypack'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span>
+    module<span class="token operator">:</span><span class="token punctuation">{</span>
+        rules<span class="token operator">:</span><span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+                test<span class="token operator">:</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.js$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+                use<span class="token operator">:</span><span class="token string">'HappyPack/loader?id=js'</span><span class="token comment">//这个id=js就代表这是打包js的</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                test<span class="token operator">:</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.css$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+                use<span class="token operator">:</span><span class="token string">'HappyPack/loader?id=css'</span><span class="token comment">//这个id=css就代表这是打包css的</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    plugins<span class="token operator">:</span><span class="token punctuation">[</span>
+        <span class="token keyword">new</span> <span class="token class-name">HappyPack</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          <span class="token comment">// 这个id:css 就代表这是打包css的</span>
+            id<span class="token operator">:</span><span class="token string">'css'</span><span class="token punctuation">,</span>
+            use<span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'style-loader'</span><span class="token punctuation">,</span><span class="token string">'css-loader'</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token keyword">new</span> <span class="token class-name">HappyPack</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          <span class="token comment">//这个id:js就代表这是打包js的</span>
+            id<span class="token operator">:</span><span class="token string">'js'</span><span class="token punctuation">,</span>
+            use<span class="token operator">:</span><span class="token punctuation">[</span><span class="token punctuation">{</span>
+              <span class="token comment">//use是一个数组，这里写 原先在rules的use里的loader配置</span>
+                loader<span class="token operator">:</span><span class="token string">'babel-loader'</span><span class="token punctuation">,</span>
+                options<span class="token operator">:</span><span class="token punctuation">{</span>
+                    presets<span class="token operator">:</span><span class="token punctuation">[</span>
+                        <span class="token string">'@babel/presets-env'</span><span class="token punctuation">,</span>
+                        <span class="token string">'@babel/presets-react'</span>
+                    <span class="token punctuation">]</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br></div></div><ul><li>thread-loader ，在worker 池(worker pool)中运行加载器loader。把thread-loader 放置在其他 loader 之前， 放置在这个 thread-loader 之后的 loader 就会在一个单独的 worker 池(worker pool)中运行。</li></ul> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">// 安装： npm install --save-dev thread-loader</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  module<span class="token operator">:</span> <span class="token punctuation">{</span>
+    rules<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        test<span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.js$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+        include<span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">'src'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        use<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+              loader<span class="token operator">:</span> <span class="token string">&quot;thread-loader&quot;</span><span class="token punctuation">,</span>
+              <span class="token comment">// 有同样配置的 loader 会共享一个 worker 池(worker pool)</span>
+              options<span class="token operator">:</span> <span class="token punctuation">{</span>
+                  <span class="token comment">// 产生的 worker 的数量，默认是 cpu 的核心数</span>
+                  workers<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+
+                  <span class="token comment">// 一个 worker 进程中并行执行工作的数量</span>
+                  <span class="token comment">// 默认为 20</span>
+                  workerParallelJobs<span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+
+                  <span class="token comment">// 额外的 node.js 参数</span>
+                  workerNodeArgs<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'--max-old-space-size'</span><span class="token punctuation">,</span> <span class="token string">'1024'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+                  <span class="token comment">// 闲置时定时删除 worker 进程</span>
+                  <span class="token comment">// 默认为 500ms</span>
+                  <span class="token comment">// 可以设置为无穷大， 这样在监视模式(--watch)下可以保持 worker 持续存在</span>
+                  poolTimeout<span class="token operator">:</span> <span class="token number">2000</span><span class="token punctuation">,</span>
+
+                  <span class="token comment">// 池(pool)分配给 worker 的工作数量</span>
+                  <span class="token comment">// 默认为 200</span>
+                  <span class="token comment">// 降低这个数值会降低总体的效率，但是会提升工作分布更均一</span>
+                  poolParallelJobs<span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+
+                  <span class="token comment">// 池(pool)的名称</span>
+                  <span class="token comment">// 可以修改名称来创建其余选项都一样的池(pool)</span>
+                  name<span class="token operator">:</span> <span class="token string">&quot;my-pool&quot;</span>
+              <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span> 
+          <span class="token punctuation">{</span>
+              loader<span class="token operator">:</span><span class="token string">'babel-loader'</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br></div></div><p>同样，thread-loader也不是越多越好，也请只在耗时的loader 上使用。</p> <ul><li><p>webpack-parallel-uglify-plugin开启多个压缩文件的子进程</p> <ul><li><p>在Webpack3 中，我们一般使用 UglifyJS 来压缩代码，但是这个是单线程运行的，也就是说多个js文件需要被压缩，它需要一个个文件进行压缩。所以说在正式环境打包压缩代码速度非常慢(因为压缩JS代码需要先把代码解析成AST语法树，再去应用各种规则分析和处理AST，导致这个过程耗时非常大)。为了加快效率，我们可以使用 webpack-parallel-uglify-plugin 插件，该插件会开启多个子进程，把对多个文件压缩的工作分别给多个子进程去完成，但是每个子进程还是通过UglifyJS去压缩代码。无非就是变成了并行处理该压缩了，并行处理多个子任务，提高打包效率。来并行运行 UglifyJS，从而提高效率。</p></li> <li><p>在 Webpack4 中，我们就不需要以上这些操作了，只需要将 mode 设置为 production 就可以默认开启以上功能。代码压缩也是我们必做的性能优化方案，当然我们不止可以压缩JS 代码，还可以压缩HTML、CSS 代码，并且在压缩 JS 代码的过程中，我们还可以通过配置实现比如删除 console.log 这类代码的功能。</p></li></ul></li></ul> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">let</span> ParallelUglifyPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'webpack-parallel-uglify-plugin'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    module<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token keyword">new</span> <span class="token class-name">ParallelUglifyPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            workerCount：<span class="token number">3</span>，<span class="token comment">//开启几个子进程去并发的执行压缩。默认是当前运行电脑的cPU核数减去1</span>
+            uglifyJs<span class="token operator">:</span><span class="token punctuation">{</span>
+                output<span class="token operator">:</span><span class="token punctuation">{</span>
+                    beautify<span class="token operator">:</span><span class="token boolean">false</span>，<span class="token comment">//不需要格式化</span>
+                    comments<span class="token operator">:</span><span class="token boolean">false</span>，<span class="token comment">//不保留注释</span>
+                <span class="token punctuation">}</span>，
+                compress<span class="token operator">:</span><span class="token punctuation">{</span>
+                    warnings<span class="token operator">:</span><span class="token boolean">false</span>，<span class="token comment">//在Uglify]s除没有用到的代码时不输出警告</span>
+                    drop_console<span class="token operator">:</span><span class="token boolean">true</span>，<span class="token comment">//删除所有的console语句，可以兼容ie浏览器</span>
+                    collapse_vars<span class="token operator">:</span><span class="token boolean">true</span>，<span class="token comment">//内嵌定义了但是只用到一次的变量</span>
+                    reduce_vars<span class="token operator">:</span><span class="token boolean">true</span>，<span class="token comment">//取出出现多次但是没有定义成变量去引用的静态值</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>，
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/src/webpack/introduction.html">
+        webpack 是什么
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3a51ea5a.js" defer></script><script src="/assets/js/2.7a6cbd8d.js" defer></script><script src="/assets/js/80.cf1b2332.js" defer></script>
+  </body>
+</html>

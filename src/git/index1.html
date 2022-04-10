@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>git 基本使用 | Jenny 的学习笔记</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="stylesheet" href="/css/style.css">
+    <script charset="utf-8" src="/js/main.js"></script>
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/assets/css/0.styles.fdee9969.css" as="style"><link rel="preload" href="/assets/js/app.3a51ea5a.js" as="script"><link rel="preload" href="/assets/js/2.7a6cbd8d.js" as="script"><link rel="preload" href="/assets/js/42.d000c9cf.js" as="script"><link rel="prefetch" href="/assets/js/10.ae26a9ae.js"><link rel="prefetch" href="/assets/js/11.9984dc0f.js"><link rel="prefetch" href="/assets/js/12.5003a7a3.js"><link rel="prefetch" href="/assets/js/13.8cec5501.js"><link rel="prefetch" href="/assets/js/14.b6dc96bf.js"><link rel="prefetch" href="/assets/js/15.882b2634.js"><link rel="prefetch" href="/assets/js/16.5857d63e.js"><link rel="prefetch" href="/assets/js/17.5a1f4e3a.js"><link rel="prefetch" href="/assets/js/18.7c332761.js"><link rel="prefetch" href="/assets/js/19.a92697b0.js"><link rel="prefetch" href="/assets/js/20.2baf9e65.js"><link rel="prefetch" href="/assets/js/21.8d7ffc0a.js"><link rel="prefetch" href="/assets/js/22.8c266082.js"><link rel="prefetch" href="/assets/js/23.4dcb8684.js"><link rel="prefetch" href="/assets/js/24.7e1b8bd7.js"><link rel="prefetch" href="/assets/js/25.6893b5a6.js"><link rel="prefetch" href="/assets/js/26.cdba9aa9.js"><link rel="prefetch" href="/assets/js/27.4436af58.js"><link rel="prefetch" href="/assets/js/28.134e0d73.js"><link rel="prefetch" href="/assets/js/29.cc751d36.js"><link rel="prefetch" href="/assets/js/3.9025e100.js"><link rel="prefetch" href="/assets/js/30.76f84ac1.js"><link rel="prefetch" href="/assets/js/31.92d4f1ba.js"><link rel="prefetch" href="/assets/js/32.49fd4f20.js"><link rel="prefetch" href="/assets/js/33.966f66b4.js"><link rel="prefetch" href="/assets/js/34.f979adae.js"><link rel="prefetch" href="/assets/js/35.a87d9b31.js"><link rel="prefetch" href="/assets/js/36.e113d7c8.js"><link rel="prefetch" href="/assets/js/37.f4cb478d.js"><link rel="prefetch" href="/assets/js/38.41140f59.js"><link rel="prefetch" href="/assets/js/39.fe0182a6.js"><link rel="prefetch" href="/assets/js/4.d0c4069c.js"><link rel="prefetch" href="/assets/js/40.54919f77.js"><link rel="prefetch" href="/assets/js/41.bfd32d9d.js"><link rel="prefetch" href="/assets/js/43.14f893af.js"><link rel="prefetch" href="/assets/js/44.19fe44b9.js"><link rel="prefetch" href="/assets/js/45.e1d0283a.js"><link rel="prefetch" href="/assets/js/46.2b561767.js"><link rel="prefetch" href="/assets/js/47.837d8d78.js"><link rel="prefetch" href="/assets/js/48.5e8286eb.js"><link rel="prefetch" href="/assets/js/49.6e2b25f0.js"><link rel="prefetch" href="/assets/js/5.325850c0.js"><link rel="prefetch" href="/assets/js/50.c03b0bcd.js"><link rel="prefetch" href="/assets/js/51.d397769e.js"><link rel="prefetch" href="/assets/js/52.7d92bb33.js"><link rel="prefetch" href="/assets/js/53.31df2ef1.js"><link rel="prefetch" href="/assets/js/54.6f014636.js"><link rel="prefetch" href="/assets/js/55.7026ba4d.js"><link rel="prefetch" href="/assets/js/56.8610bd61.js"><link rel="prefetch" href="/assets/js/57.4dab35be.js"><link rel="prefetch" href="/assets/js/58.36461e34.js"><link rel="prefetch" href="/assets/js/59.dd40fcbf.js"><link rel="prefetch" href="/assets/js/6.e07a44fa.js"><link rel="prefetch" href="/assets/js/60.af6fca51.js"><link rel="prefetch" href="/assets/js/61.437fcd37.js"><link rel="prefetch" href="/assets/js/62.6c16153a.js"><link rel="prefetch" href="/assets/js/63.e5c7b9b6.js"><link rel="prefetch" href="/assets/js/64.86a63bc0.js"><link rel="prefetch" href="/assets/js/65.2a59dc53.js"><link rel="prefetch" href="/assets/js/66.7bbf2507.js"><link rel="prefetch" href="/assets/js/67.441d4566.js"><link rel="prefetch" href="/assets/js/68.121d6fae.js"><link rel="prefetch" href="/assets/js/69.6223f594.js"><link rel="prefetch" href="/assets/js/7.d6ae9493.js"><link rel="prefetch" href="/assets/js/70.f2fd6f90.js"><link rel="prefetch" href="/assets/js/71.7e167845.js"><link rel="prefetch" href="/assets/js/72.a8004dd5.js"><link rel="prefetch" href="/assets/js/73.c51c3267.js"><link rel="prefetch" href="/assets/js/74.4c6489a8.js"><link rel="prefetch" href="/assets/js/75.53468a29.js"><link rel="prefetch" href="/assets/js/76.2d29594d.js"><link rel="prefetch" href="/assets/js/77.e13fff63.js"><link rel="prefetch" href="/assets/js/78.5ae5d561.js"><link rel="prefetch" href="/assets/js/79.100ae315.js"><link rel="prefetch" href="/assets/js/8.ce44b8a3.js"><link rel="prefetch" href="/assets/js/80.cf1b2332.js"><link rel="prefetch" href="/assets/js/81.a3b1864f.js"><link rel="prefetch" href="/assets/js/82.223714d2.js"><link rel="prefetch" href="/assets/js/9.421c83c8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.fdee9969.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/jenny.png" alt="Jenny 的学习笔记" class="logo"> <span class="site-name can-hide">Jenny 的学习笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/src/faq/js/all/" class="nav-link">
+  日常笔记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础笔记" class="dropdown-title"><span class="title">基础笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础笔记" class="mobile-dropdown-title"><span class="title">基础笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/src/vue/01_introduction/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/src/webpack/index1/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/src/webApi/location/" class="nav-link">
+  webApi
+</a></li><li class="dropdown-item"><!----> <a href="/src/lgthm/index1/" class="nav-link">
+  lgthm
+</a></li><li class="dropdown-item"><!----> <a href="/src/reg/index1/" class="nav-link">
+  reg
+</a></li><li class="dropdown-item"><!----> <a href="/src/js/1_简介/" class="nav-link">
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/src/cmd/cmd1/" class="nav-link">
+  cmd
+</a></li><li class="dropdown-item"><!----> <a href="/src/shell/shell/" class="nav-link">
+  shell
+</a></li><li class="dropdown-item"><!----> <a href="/src/ts/ts1/" class="nav-link">
+  typescript
+</a></li><li class="dropdown-item"><!----> <a href="/src/dataStructure/01jsEnv/" class="nav-link">
+  dataStructure
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="实用工具" class="dropdown-title"><span class="title">实用工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="实用工具" class="mobile-dropdown-title"><span class="title">实用工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/src/nvm/index1/" class="nav-link">
+  nvm
+</a></li><li class="dropdown-item"><!----> <a href="/src/git/index1/" class="nav-link">
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/src/mock/index1/" class="nav-link">
+  mock
+</a></li><li class="dropdown-item"><!----> <a href="/src/vscode/plugins/" class="nav-link">
+  vscode
+</a></li><li class="dropdown-item"><!----> <a href="/src/lint/eslint.html" class="nav-link">
+  lint
+</a></li><li class="dropdown-item"><!----> <a href="/src/vuepress/index1.html" class="nav-link">
+  vuepress
+</a></li></ul></div></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/src/faq/js/all/" class="nav-link">
+  日常笔记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础笔记" class="dropdown-title"><span class="title">基础笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础笔记" class="mobile-dropdown-title"><span class="title">基础笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/src/vue/01_introduction/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/src/webpack/index1/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/src/webApi/location/" class="nav-link">
+  webApi
+</a></li><li class="dropdown-item"><!----> <a href="/src/lgthm/index1/" class="nav-link">
+  lgthm
+</a></li><li class="dropdown-item"><!----> <a href="/src/reg/index1/" class="nav-link">
+  reg
+</a></li><li class="dropdown-item"><!----> <a href="/src/js/1_简介/" class="nav-link">
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/src/cmd/cmd1/" class="nav-link">
+  cmd
+</a></li><li class="dropdown-item"><!----> <a href="/src/shell/shell/" class="nav-link">
+  shell
+</a></li><li class="dropdown-item"><!----> <a href="/src/ts/ts1/" class="nav-link">
+  typescript
+</a></li><li class="dropdown-item"><!----> <a href="/src/dataStructure/01jsEnv/" class="nav-link">
+  dataStructure
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="实用工具" class="dropdown-title"><span class="title">实用工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="实用工具" class="mobile-dropdown-title"><span class="title">实用工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/src/nvm/index1/" class="nav-link">
+  nvm
+</a></li><li class="dropdown-item"><!----> <a href="/src/git/index1/" class="nav-link">
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/src/mock/index1/" class="nav-link">
+  mock
+</a></li><li class="dropdown-item"><!----> <a href="/src/vscode/plugins/" class="nav-link">
+  vscode
+</a></li><li class="dropdown-item"><!----> <a href="/src/lint/eslint.html" class="nav-link">
+  lint
+</a></li><li class="dropdown-item"><!----> <a href="/src/vuepress/index1.html" class="nav-link">
+  vuepress
+</a></li></ul></div></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>git使用笔记</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/src/git/index1.html" aria-current="page" class="active sidebar-link">git 基本使用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/src/git/index1.html#git-是什么" class="sidebar-link">git 是什么</a></li><li class="sidebar-sub-header"><a href="/src/git/index1.html#git-与-svn-区别" class="sidebar-link">Git 与 SVN 区别</a></li><li class="sidebar-sub-header"><a href="/src/git/index1.html#git-常用命令" class="sidebar-link">git 常用命令</a></li><li class="sidebar-sub-header"><a href="/src/git/index1.html#开发中分支使用原则与流程" class="sidebar-link">开发中分支使用原则与流程</a></li><li class="sidebar-sub-header"><a href="/src/git/index1.html#git远程仓库" class="sidebar-link">Git远程仓库</a></li></ul></li><li><a href="/src/git/faq1.html" class="sidebar-link">常见问题处理</a></li><li><a href="/src/git/ssh.html" class="sidebar-link">ssh 密钥配置</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="git-基本使用"><a href="#git-基本使用" class="header-anchor">#</a> git 基本使用</h1> <h2 id="git-是什么"><a href="#git-是什么" class="header-anchor">#</a> git 是什么</h2> <p>Git 是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。<br>
+工作原理:
+<img src="/img/git.png">
+Workspace：工作区<br>
+Index / Stage：暂存区<br>
+Repository：仓库区（或本地仓库）<br>
+Remote：远程仓库</p> <h2 id="git-与-svn-区别"><a href="#git-与-svn-区别" class="header-anchor">#</a> Git 与 SVN 区别</h2> <ul><li><p>SVN是集中式版本控制系统，版本库是集中放在中央服务器的，而干活的时候，用的都是自己的电脑，所以首先要从中央服务器哪里得到最新的版本，然后干活，干完后，需要把自己做完的活推送到中央服务器。集中式版本控制系统是必须联网才能工作，如果在局域网还可以，带宽够大，速度够快，如果在互联网下，如果网速慢的话，就纳闷了。</p></li> <li><p>Git是分布式版本控制系统，那么它就没有中央服务器的，每个人的电脑就是一个完整的版本库，这样，工作的时候就不需要联网了，因为版本都是在自己的电脑上。既然每个人的电脑都有一个完整的版本库，那多个人如何协作呢？比如说自己在电脑上改了文件A，其他人也在电脑上改了文件A，这时，你们两之间只需把各自的修改推送给对方，就可以互相看到对方的修改了。</p></li></ul> <h2 id="git-常用命令"><a href="#git-常用命令" class="header-anchor">#</a> git 常用命令</h2> <p><strong>创建版本库</strong>
+版本库又名仓库，英文名repository,你可以简单的理解一个目录，这个目录里面的所有文件都可以被Git管理起来，每个文件的修改，删除，Git都能跟踪，以便任何时刻都可以追踪历史，或者在将来某个时刻还可以将文件”还原”。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token builtin class-name">cd</span> <span class="token punctuation">[</span>需要创建版本可的文件路径<span class="token punctuation">]</span>  
+<span class="token function">git</span> init
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>执行完git init 该目录下就会多一个.git文件，这是git追踪管理版本的，如果就是目录设置默认隐藏，通过<code>ls -a</code>可以查看</p> <p>版本控制系统，其实只能跟踪文本文件的改动，而图片、视频这些二进制文件，虽然也能由版本控制系统管理，但没法跟踪文件的变化，只知道图片从100KB改成了120KB，但到底改了啥，版本控制系统不知道，Microsoft的Word格式是二进制格式，因此，版本控制系统是没法跟踪Word文件的改动的<br> <strong>查看文件暂存提交状态</strong></p> <ul><li><code>git status</code>命令用于显示工作目录和暂存区的状态。使用此命令能看到那些修改被暂存到了, 哪些没有, 哪些文件没有被Git tracked到. commit之前的状态</li> <li><code>git log</code>  查看历史提交记录(<code>q</code>退出)<br>
+命令形式:git log [option]<br>
+options
+<ul><li>--all 显示所有分支</li> <li>--pretty=oneline 将提交信息显示为一行</li> <li>--abbrev-commit 使得输出的commitId更简短</li> <li>--graph 以图的形式显示</li></ul></li> <li><code>git reflog</code> 查看所以的版本，包括回退过的版本</li></ul> <p><strong>添加到暂存区</strong><br>
+在工作区的文件有两个状态：</p> <ul><li><code>unstaged</code>: (修改已有文件)已经跟踪，但未暂存</li> <li><code>untracked</code>: （新创建的文件）未跟踪</li> <li>使用<code>git add</code>命令可以把文件提交到仓库的缓存区，文件状态变为<code>staged</code> <img src="/img/gitsteps.png"></li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 暂存全部 (不会添加.gitignor忽略的文件)</span>
+<span class="token function">git</span> <span class="token function">add</span> *
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token comment"># 暂存pages目录及其子目录.js结尾文件</span>
+<span class="token function">git</span> <span class="token function">add</span> pages/*.js
+<span class="token comment"># 暂存 当前目录下text 开头的JS文件,不考虑子目录的文件</span>
+<span class="token function">git</span> <span class="token function">add</span> text-*.js
+<span class="token comment"># 暂存指定文件test.js, 这里写的是文件路径，不考虑子目录的文件</span>
+<span class="token function">git</span> <span class="token function">add</span> test.js
+<span class="token comment"># 查看还没提交的被修改过或已删除文件，不写path默认查找范围为根目录下所以文件</span>
+<span class="token function">git</span> <span class="token function">add</span> -i <span class="token punctuation">[</span><span class="token operator">&lt;</span>path<span class="token operator">&gt;</span><span class="token punctuation">]</span>
+<span class="token comment"># 添加被.gitignor忽略的文件</span>
+<span class="token function">git</span> <span class="token function">add</span> -f
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p><strong>提交到本地仓库</strong></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">git</span> commit -m <span class="token string">'提交注释'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>提交到远程仓库</strong></p> <p><strong>版本回退</strong></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">git</span> reset --hard <span class="token punctuation">[</span>commitID<span class="token punctuation">]</span>
+<span class="token comment"># 退回上一个版本</span>
+<span class="token function">git</span> reset --hard HEAD^
+<span class="token comment"># 退回上上个版本</span>
+<span class="token function">git</span> reset --hard HEAD^^
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong>添加到忽略文件</strong><br>
+有些文件无需纳入Git 的管理，也不希望它们总出现在未跟踪文件列表。 通常都是些自动生成的文件，比如日志文件，或者编译过程中创建的临时文件等。<br>
+我们可以在工作目录 中创建一个名为 .gitignore 的文件(文件名称固定)，列出要忽略的文件模式。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>node_modules
+/dist
+<span class="token comment"># local env files</span>
+.env.local
+.env.*.local
+
+<span class="token comment"># Log files</span>
+*-debug.log*
+*-error.log*
+<span class="token comment"># Editor directories and files</span>
+.idea
+.vscode
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p><strong>分支命令</strong></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 查看本地分支</span>
+<span class="token function">git</span> branch
+<span class="token comment"># 查看本地分支跟远程分支详细的关联关系</span>
+<span class="token function">git</span> branch -vv
+<span class="token comment"># 创建分支</span>
+<span class="token function">git</span> branch <span class="token punctuation">[</span>分支名<span class="token punctuation">]</span>
+<span class="token comment"># 切换分支</span>
+<span class="token function">git</span> checkout <span class="token punctuation">[</span>分支名<span class="token punctuation">]</span>
+<span class="token comment"># 切换到一个不存在的分支(创建并切换)</span>
+<span class="token function">git</span> checkout -b <span class="token punctuation">[</span>分支名<span class="token punctuation">]</span>
+<span class="token comment"># 合并分支, [分支名]的内容合并到当前分支</span>
+<span class="token function">git</span> merge <span class="token punctuation">[</span>分支名<span class="token punctuation">]</span>
+<span class="token comment"># 删除分支，只能删除当前分支，只能删除其他分支</span>
+<span class="token function">git</span> branch -d <span class="token punctuation">[</span>分支名<span class="token punctuation">]</span> <span class="token comment"># 删除分支时，需要做各种检查，分支内容没有合并是 -d无法删除分支</span>
+<span class="token function">git</span> branch -D <span class="token punctuation">[</span>分支名<span class="token punctuation">]</span> <span class="token comment"># 不做任何检查，强制</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p><strong>解决冲突</strong>
+当两个分支上对文件的修改可能会存在冲突，例如同时修改了同一个文件的同一行，这时就需要手动解 决冲突，解决冲突步骤如下:</p> <ol><li>处理文件中冲突的地方</li> <li>将解决完冲突的文件加入暂存区(add)</li> <li>提交到仓库(commit)</li></ol> <h2 id="开发中分支使用原则与流程"><a href="#开发中分支使用原则与流程" class="header-anchor">#</a> 开发中分支使用原则与流程</h2> <p>几乎所有的版本控制系统都以某种形式支持分支。 使用分支意味着你可以把你的工作从开发主线上分离
+开来进行重大的Bug修改、开发新的功能，以免影响开发主线</p> <ul><li>master 一般作为主要开发分支，如果没有其他并行开发不同期上线要求，都可以在此版本进行开发，阶段开发完成后，需要是合并到test分支,测试准备上线。</li> <li>test 测试分支</li> <li>pre 预发布分支 一般用于模拟线上环境测试分子</li> <li>prod 生成分支 发布上线分支</li></ul> <p>如果线上出现bug, 则把prod分支拉下拉并且合到pre分支修改，bug改完测完上线后，再把pre改的内容合到master。</p> <h2 id="git远程仓库"><a href="#git远程仓库" class="header-anchor">#</a> Git远程仓库</h2> <p><strong>ssh配置公钥</strong><br>
+登录远程服务器的时候，是需要输入登录密码的,每次都要手动输入账号密码会很麻烦。
+可以ssh配置公钥，配好后对方直接使用ssh username，就可以直接连上，不用输密码。</p> <ul><li>生成SSH公钥: 打开终端输入 <code>ssh-keygen -t rsa</code></li> <li>不断回车 (如果公钥已经存在，则自动覆盖)</li></ul> <p><strong>Gitee设置账户共公钥</strong></p> <ul><li>获取公钥：终端输入<code>cat ~/.ssh/id_rsa.pub</code></li> <li>把返回的内容复制贴到码云SSH公钥配置的地方
+<img src="/img/ssh.png"></li> <li>验证是否配置成功: 终端输入<code>ssh -T git@gitee.com</code></li></ul> <p><strong>本地添加远到程仓库</strong></p> <ol><li>本地仓库跟已创远程仓库对接<code>git remote add &lt;远端名称&gt; &lt;仓库路径&gt;</code></li></ol> <ul><li>远端名称，默认是origin，取决于远端服务器设置, 可以另外给远程仓库起名</li> <li>仓库路径，从远端服务器获取此URL</li></ul> <p><strong>推送到远程仓库</strong></p> <ul><li><code>git push -f --set-upstream [远端名称] [本地分支名]:[远端分支名] ]</code></li> <li>如果远程分支名和本地分支名称相同，则可以只写本地分支<code>git push [远端名称] master</code></li> <li>-f 表示强制覆盖</li> <li>--set-upstream 第一推送到远端的同时并且建立起和远端分支的关联关系<code>git push --set-upstream origin master</code></li> <li>如果当前分支已经和远端分支关联，则可以省略分支名和远端名。 <code>git push</code> 将master分支推送到已关联的远端分支。</li></ul> <p><strong>查看远程仓库</strong> : <code>git remote</code></p> <p><strong>从远程仓库克隆</strong></p> <ol><li>把远程仓库代码下载到本地<code>git clone &lt;仓库路径&gt; &lt;本地目录&gt;</code></li> <li>本地目录可以省略，会自动生成一个目录</li></ol> <p><strong>从远程仓库中抓取和拉取</strong></p> <ul><li>抓取指令就是将仓库里的更新都抓取到本地，不会进行合并
+<ul><li>抓取 命令:<code>git fetch [远端名] [分支名]</code></li> <li>如果不指定远端名称和分支名，则抓取所有分支。</li></ul></li> <li>拉取指令就是将远端仓库的修改拉到本地并自动进行合并，等同于fetch+merge
+<ul><li>拉取 命令: <code>git pull [远端名] [分支名]</code></li> <li>如果不指定远端名称和分支名，则抓取所有并更新当前分支。</li></ul></li></ul> <p><strong>解决合并冲突</strong><br>
+在一段时间，A、B用户修改了同一个文件，且修改了同一行位置的代码，此时会发生合并冲突。<br>
+A用户在本地修改代码后优先推送到远程仓库，此时B用户在本地修订代码，提交到本地仓库后，也需要推送到远程仓库，此时B用户晚于A用户，故需要先拉取远程仓库的提交，经过合并后才能推送到远端分支,如下图所示。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/src/git/faq1.html">
+        常见问题处理
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3a51ea5a.js" defer></script><script src="/assets/js/2.7a6cbd8d.js" defer></script><script src="/assets/js/42.d000c9cf.js" defer></script>
+  </body>
+</html>
